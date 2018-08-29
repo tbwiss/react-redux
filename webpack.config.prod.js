@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
 
+
 export default {
   debug: true,
   devtool: 'source-map',
@@ -16,8 +17,6 @@ export default {
     contentBase: path.resolve(__dirname, 'dist')
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
   ],
   module: {
     loaders: [
